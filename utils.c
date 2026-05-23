@@ -1,6 +1,7 @@
 #include "utils.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 char* readFile(const char* fileName) {
     FILE* file = fopen(fileName, "r");
@@ -25,8 +26,4 @@ char* readFile(const char* fileName) {
 
     fclose(file);
     return buffer;
-}
-
-size_t findPattern(const char* str, const char* pattern){
-    
 }

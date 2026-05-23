@@ -9,8 +9,10 @@ int main(int argc, char *argv[]) {
     char* programName = argv[1];
     char* program = readFile(programName);
     printf("Program:\n%s\n", program);
-    free(program);
+
     
+    free(program);
+
 
 
 
